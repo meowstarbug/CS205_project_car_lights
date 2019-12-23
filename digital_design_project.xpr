@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="E:/Desktop/trivia/trivia.xpr">
+<Project Version="7" Minor="35" Path="E:/Desktop/digital_design_project/digital_design_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="91cf629a4cc941ffb4ec63f9333bd88a"/>
+    <Option Name="Id" Val="214c84f5bdec4fbc8c5161508b338d02"/>
     <Option Name="Part" Val="xc7a100tfgg484-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
