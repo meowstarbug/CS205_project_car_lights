@@ -6,10 +6,15 @@ I still need:
     testing: 
     tested:
 
-    segment tube showing state letters
-    (chart of segment tube)
-
     clk refactoring, new clks
-    remember to check syntax
 */
 
+/*
+d: 1010_0001
+l: 1100_0111
+r: 1010_1111
+e: 1000_0110
+b: 1000_0011
+p: 1000_1100
+o: 1010_0011
+*/

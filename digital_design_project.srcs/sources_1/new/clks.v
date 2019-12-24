@@ -30,7 +30,7 @@ module clk_1hz(
     output reg clk_out = 0,
     output reg [28:0] cnt = 0 
     );
-    parameter [28:0] period = 29'd5000_0000;
+    parameter [28:0] period = 29'd4999_9999;
     always@(posedge clk)
         if(cnt==period)begin
             clk_out = ~clk_out;

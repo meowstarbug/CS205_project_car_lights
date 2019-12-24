@@ -23,7 +23,7 @@ module nekonull(
     wire blink_clk;
     // seg tube not included
 
-    error_detection error_detection1(.d(d), .l(l), .r(r), .e(e), .b(b), .p(p), .err());
+    error_detection error_detection1(.d(d), .l(l), .r(r), .e(e), .b(b), .p(p), .err(err));
 
     d_light d_light1(.d(d), .err(err), .out(d_light));
     l_light l_light1(.clk_3_ro(c3r), .l(l), .e(e), .err(err), .out(l_light));
