@@ -18,7 +18,7 @@ module l_light(clk_3_ro, l, e, err, out);
     assign en = l|e;
     assign l_light_wo_err = (en==1'b1)?clk_3_ro:3'b000;
 
-    err_led nkn(.led(l_light_wo_err), .err(err), .actual_led(out));
+    err_led_3 nkn(.led(l_light_wo_err), .err(err), .actual_led(out));
 endmodule
 
 module p_light(b, p, blink_clk, out);
