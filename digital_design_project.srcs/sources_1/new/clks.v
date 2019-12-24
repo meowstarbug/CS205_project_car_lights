@@ -25,6 +25,21 @@ module clk_3_rotate(clk_1hz, out);
     end
 endmodule
 
+module clk_1hz(
+    input clk,
+    output reg clk_out = 0,
+    output reg [28:0] cnt = 0 
+    );
+    parameter [28:0] period = 29'd5000_0000;
+    always@(posedge clk)
+        if(cnt==period)begin
+            clk_out = ~clk_out;
+            cnt <= 0;
+        end
+        else
+            cnt <= cnt+1;
+ endmodule
+
 module clk_500hz(clk_10mhz, out);
     input [0:0] clk_10mhz;
     output reg [0:0] out;
