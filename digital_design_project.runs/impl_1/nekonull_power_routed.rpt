@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Dec 25 18:33:26 2019
+| Date             : Wed Dec 25 21:46:25 2019
 | Host             : DESKTOP-T9R1A6T running 64-bit major release  (build 9200)
 | Command          : report_power -file nekonull_power_routed.rpt -pb nekonull_power_summary_routed.pb -rpx nekonull_power_routed.rpx
 | Design           : nekonull
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 2.589        |
+| Total On-Chip Power (W)  | 2.508        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.487        |
+| Dynamic (W)              | 2.406        |
 | Device Static (W)        | 0.102        |
 | Effective TJA (C/W)      | 2.7          |
-| Max Ambient (C)          | 78.1         |
-| Junction Temperature (C) | 31.9         |
+| Max Ambient (C)          | 78.3         |
+| Junction Temperature (C) | 31.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.286 |      184 |       --- |             --- |
-|   LUT as Logic |     0.214 |       53 |     63400 |            0.08 |
-|   CARRY4       |     0.036 |       16 |     15850 |            0.10 |
-|   Register     |     0.031 |       90 |    126800 |            0.07 |
+| Slice Logic    |     0.272 |      153 |       --- |             --- |
+|   LUT as Logic |     0.205 |       47 |     63400 |            0.07 |
+|   CARRY4       |     0.033 |       12 |     15850 |            0.08 |
+|   Register     |     0.029 |       73 |    126800 |            0.06 |
 |   BUFG         |     0.006 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes  |    <0.001 |        1 |     63400 |           <0.01 |
-|   Others       |     0.000 |       11 |       --- |             --- |
-| Signals        |     0.401 |      148 |       --- |             --- |
-| I/O            |     1.800 |       32 |       285 |           11.23 |
+|   Others       |     0.000 |        9 |       --- |             --- |
+| Signals        |     0.364 |      123 |       --- |             --- |
+| I/O            |     1.770 |       32 |       285 |           11.23 |
 | Static Power   |     0.102 |          |           |                 |
-| Total          |     2.589 |          |           |                 |
+| Total          |     2.508 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.734 |       0.715 |      0.019 |
-| Vccaux    |       1.800 |     0.083 |       0.065 |      0.019 |
-| Vcco33    |       3.300 |     0.505 |       0.501 |      0.004 |
+| Vccint    |       1.000 |     0.683 |       0.664 |      0.019 |
+| Vccaux    |       1.800 |     0.082 |       0.064 |      0.019 |
+| Vcco33    |       3.300 |     0.497 |       0.493 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,13 +139,12 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| nekonull        |     2.487 |
-|   clk_1hz1      |     0.161 |
-|   clk_3_rotate1 |     0.096 |
-|   gen_buzz1     |     0.202 |
-|     clk_10mhz1  |     0.165 |
-|     clk_500hz1  |     0.037 |
-|   seg_output1   |     0.038 |
+| nekonull        |     2.406 |
+|   clk_1hz1      |     0.159 |
+|   clk_3_rotate1 |     0.098 |
+|   gen_buzz1     |     0.149 |
+|     clk_1khz1   |     0.149 |
+|   seg_output1   |     0.040 |
 +-----------------+-----------+
 
 

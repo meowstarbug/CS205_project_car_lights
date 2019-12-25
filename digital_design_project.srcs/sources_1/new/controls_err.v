@@ -8,7 +8,9 @@ module error_detection(
 
     // l+r, d/l/r + p
     
-    assign err = (l&r) + (d|l|r)&p;
+    assign err = (l&r) | ((d|l|r)&p);
+    // assign err = (l&r) | ((d|l|r)&p) | ((l|r)&(~d));
+
 endmodule
 
 module err_led(led, err, actual_led);

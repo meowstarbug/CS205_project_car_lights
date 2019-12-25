@@ -42,24 +42,7 @@ module clk_1hz(
             cnt <= cnt+1;
 endmodule
 
-module clk_500hz(clk_10mhz, out);
-    input [0:0] clk_10mhz;
-    output reg [0:0] out;
-    
-    reg [15:0] cnt=0;
-    always @ (posedge clk_10mhz)
-    begin
-        if(cnt == 19999)
-        begin
-            cnt <= 0;
-            out <= ~out;
-        end
-        else
-            cnt <= cnt+1;
-    end
-endmodule
-
-module clk_10mhz(sys_clk,out);
+module clk_1khz(sys_clk,out);
 
     input sys_clk;
     output reg out=0;
@@ -67,7 +50,7 @@ module clk_10mhz(sys_clk,out);
     reg [18:0] cnt=0;
     always @ (posedge sys_clk)
     begin
-        if(cnt == 499999)
+        if(cnt == 49999)
         begin
             cnt <= 0;
             out <= ~out;

@@ -21,29 +21,33 @@ module l_light(clk_3_ro, l, e, err, out);
     err_led_3 nkn(.led(l_light_wo_err), .err(err), .actual_led(out));
 endmodule
 
-module p_light(b, p, blink_clk, out);
-    input [0:0] b, p, blink_clk;
-    output reg [0:0] out;
+module p_light(b, p, blink_clk, out, err);
+    input [0:0] b, p, blink_clk, err;
+    output [0:0] out;
+    reg [0:0]tmp_out;
 
     always @(*)
     begin
         case ({b, p})
-            2'b00: out <= 1'b0;
-            2'b10: out <= blink_clk;
-            2'b01: out <= 1'b1;
-            2'b11: out <= 1'b1;
-            default: out <= 1'b0;
+            2'b00: tmp_out <= 1'b0;
+            2'b10: tmp_out <= blink_clk;
+            2'b01: tmp_out <= 1'b1;
+            2'b11: tmp_out <= 1'b1;
+            default: tmp_out <= 1'b0;
         endcase
     end
+    err_led nkn(.led(tmp_out), .err(err), .actual_led(out));
+    // assign out = (err==1'b1)?1'b0:tmp_out;
 endmodule
 
-module buzzer_control(buzz_clk, l, r, e, out);
+module buzzer_control(buzz_clk, l, r, e, out, err);
     input [0:0] buzz_clk;
-    input [0:0] l, r, e;
+    input [0:0] l, r, e, err;
     output [0:0] out;
-    wire [0:0] en;
+    wire [0:0] en, tmp_out;
 
     assign en = l|r|e;
-    assign out = (en==1)?buzz_clk:1'b0;
+    assign tmp_out = (en==1)?buzz_clk:1'b0;
+    err_led nkn(.led(tmp_out), .err(err), .actual_led(out));
 
 endmodule // buzzer_control

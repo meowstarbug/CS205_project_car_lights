@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 33892 
+INFO: Helper process launched with PID 28680 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 388.148 ; gain = 97.344
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 387.469 ; gain = 98.410
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'nekonull' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/nekonull_top.v:3]
 INFO: [Synth 8-638] synthesizing module 'error_detection' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:3]
@@ -27,36 +27,34 @@ INFO: [Synth 8-256] done synthesizing module 'clk_1hz' (2#1) [E:/Desktop/digital
 INFO: [Synth 8-638] synthesizing module 'clk_3_rotate' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:3]
 INFO: [Synth 8-256] done synthesizing module 'clk_3_rotate' (3#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:3]
 INFO: [Synth 8-638] synthesizing module 'gen_buzz' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/gen_buzz.v:3]
-INFO: [Synth 8-638] synthesizing module 'clk_10mhz' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:62]
-INFO: [Synth 8-256] done synthesizing module 'clk_10mhz' (4#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:62]
-INFO: [Synth 8-638] synthesizing module 'clk_500hz' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:45]
-INFO: [Synth 8-256] done synthesizing module 'clk_500hz' (5#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:45]
-INFO: [Synth 8-256] done synthesizing module 'gen_buzz' (6#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/gen_buzz.v:3]
+INFO: [Synth 8-638] synthesizing module 'clk_1khz' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:45]
+INFO: [Synth 8-256] done synthesizing module 'clk_1khz' (4#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/clks.v:45]
+INFO: [Synth 8-256] done synthesizing module 'gen_buzz' (5#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/gen_buzz.v:3]
 INFO: [Synth 8-638] synthesizing module 'd_light' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:3]
-INFO: [Synth 8-638] synthesizing module 'err_led' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:14]
-INFO: [Synth 8-256] done synthesizing module 'err_led' (7#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:14]
-INFO: [Synth 8-256] done synthesizing module 'd_light' (8#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:3]
+INFO: [Synth 8-638] synthesizing module 'err_led' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:16]
+INFO: [Synth 8-256] done synthesizing module 'err_led' (6#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:16]
+INFO: [Synth 8-256] done synthesizing module 'd_light' (7#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:3]
 INFO: [Synth 8-638] synthesizing module 'l_light' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:9]
-INFO: [Synth 8-638] synthesizing module 'err_led_3' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:20]
-INFO: [Synth 8-256] done synthesizing module 'err_led_3' (9#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:20]
-INFO: [Synth 8-256] done synthesizing module 'l_light' (10#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:9]
+INFO: [Synth 8-638] synthesizing module 'err_led_3' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:22]
+INFO: [Synth 8-256] done synthesizing module 'err_led_3' (8#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_err.v:22]
+INFO: [Synth 8-256] done synthesizing module 'l_light' (9#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:9]
 INFO: [Synth 8-638] synthesizing module 'p_light' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:24]
-INFO: [Synth 8-226] default block is never used [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:30]
-INFO: [Synth 8-256] done synthesizing module 'p_light' (11#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:24]
-INFO: [Synth 8-638] synthesizing module 'buzzer_control' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:40]
-INFO: [Synth 8-256] done synthesizing module 'buzzer_control' (12#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:40]
+INFO: [Synth 8-226] default block is never used [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:31]
+INFO: [Synth 8-256] done synthesizing module 'p_light' (10#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:24]
+INFO: [Synth 8-638] synthesizing module 'buzzer_control' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:43]
+INFO: [Synth 8-256] done synthesizing module 'buzzer_control' (11#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_led_buzz.v:43]
 INFO: [Synth 8-638] synthesizing module 'seg_mux_6' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_seg.v:3]
 INFO: [Synth 8-638] synthesizing module 'seg_mux' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_seg.v:18]
-INFO: [Synth 8-256] done synthesizing module 'seg_mux' (13#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_seg.v:18]
-INFO: [Synth 8-256] done synthesizing module 'seg_mux_6' (14#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_seg.v:3]
+INFO: [Synth 8-256] done synthesizing module 'seg_mux' (12#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_seg.v:18]
+INFO: [Synth 8-256] done synthesizing module 'seg_mux_6' (13#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/controls_seg.v:3]
 INFO: [Synth 8-638] synthesizing module 'seg_output' [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/gen_seg.v:3]
 INFO: [Synth 8-226] default block is never used [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/gen_seg.v:25]
-INFO: [Synth 8-256] done synthesizing module 'seg_output' (15#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/gen_seg.v:3]
-INFO: [Synth 8-256] done synthesizing module 'nekonull' (16#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/nekonull_top.v:3]
+INFO: [Synth 8-256] done synthesizing module 'seg_output' (14#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/gen_seg.v:3]
+INFO: [Synth 8-256] done synthesizing module 'nekonull' (15#1) [E:/Desktop/digital_design_project/digital_design_project.srcs/sources_1/new/nekonull_top.v:3]
 WARNING: [Synth 8-3331] design error_detection has unconnected port e[0]
 WARNING: [Synth 8-3331] design error_detection has unconnected port b[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 440.000 ; gain = 149.195
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 439.484 ; gain = 150.426
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -66,7 +64,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 440.000 ; gain = 149.195
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 439.484 ; gain = 150.426
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tfgg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -82,28 +80,27 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 784.215 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 778.902 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 784.215 ; gain = 493.410
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 778.902 ; gain = 489.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tfgg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 784.215 ; gain = 493.410
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 778.902 ; gain = 489.844
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 784.215 ; gain = 493.410
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 778.902 ; gain = 489.844
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_out" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "out" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 784.215 ; gain = 493.410
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 778.902 ; gain = 489.844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -118,28 +115,24 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     29 Bit       Adders := 1     
 	   2 Input     19 Bit       Adders := 1     
-	   2 Input     16 Bit       Adders := 1     
 	   2 Input      3 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 1     
-	   2 Input      1 Bit       Adders := 1     
 +---Registers : 
 	               29 Bit    Registers := 1     
 	               19 Bit    Registers := 1     
-	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
 +---Muxes : 
 	   2 Input     29 Bit        Muxes := 1     
 	   2 Input     19 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 1     
 	   4 Input      8 Bit        Muxes := 6     
 	   8 Input      8 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 5     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -148,10 +141,6 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module error_detection 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      1 Bit       Adders := 1     
 Module clk_1hz 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -172,7 +161,7 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-Module clk_10mhz 
+Module clk_1khz 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     19 Bit       Adders := 1     
@@ -181,16 +170,6 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     19 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
-Module clk_500hz 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input     16 Bit       Adders := 1     
-+---Registers : 
-	               16 Bit    Registers := 1     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
 Module err_led_3 
 Detailed RTL Component Info : 
@@ -234,12 +213,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_1hz1/clk_out" won't be mapped to RAM because address size (29) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "gen_buzz1/clk_10mhz1/out" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "gen_buzz1/clk_500hz1/out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "gen_buzz1/clk_1khz1/out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\seg_output1/seg_out_reg[7] )
 WARNING: [Synth 8-3332] Sequential element (seg_output1/seg_out_reg[7]) is unused and will be removed from module nekonull.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 784.215 ; gain = 493.410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 778.902 ; gain = 489.844
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,13 +229,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 784.512 ; gain = 493.707
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 779.027 ; gain = 489.969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 784.660 ; gain = 493.855
+Finished Timing Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 779.176 ; gain = 490.117
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -269,7 +247,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -293,7 +271,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -306,7 +284,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -318,25 +296,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -353,15 +331,15 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    16|
-|3     |LUT1   |     5|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     4|
 |4     |LUT2   |    13|
-|5     |LUT3   |     6|
-|6     |LUT4   |    15|
-|7     |LUT5   |     7|
-|8     |LUT6   |    19|
+|5     |LUT3   |     5|
+|6     |LUT4   |    10|
+|7     |LUT5   |     5|
+|8     |LUT6   |    20|
 |9     |MUXF7  |     1|
-|10    |FDRE   |    82|
+|10    |FDRE   |    65|
 |11    |FDSE   |     8|
 |12    |IBUF   |     7|
 |13    |OBUF   |    25|
@@ -371,33 +349,32 @@ Report Instance Areas:
 +------+----------------+-------------+------+
 |      |Instance        |Module       |Cells |
 +------+----------------+-------------+------+
-|1     |top             |             |   205|
+|1     |top             |             |   176|
 |2     |  clk_1hz1      |clk_1hz      |    48|
 |3     |  clk_3_rotate1 |clk_3_rotate |    16|
-|4     |  gen_buzz1     |gen_buzz     |    64|
-|5     |    clk_10mhz1  |clk_10mhz    |    34|
-|6     |    clk_500hz1  |clk_500hz    |    30|
-|7     |  seg_output1   |seg_output   |    43|
+|4     |  gen_buzz1     |gen_buzz     |    35|
+|5     |    clk_1khz1   |clk_1khz     |    35|
+|6     |  seg_output1   |seg_output   |    43|
 +------+----------------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 804.313 ; gain = 513.508
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:43 . Memory (MB): peak = 804.313 ; gain = 169.293
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:56 . Memory (MB): peak = 804.313 ; gain = 513.508
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:56 . Memory (MB): peak = 799.324 ; gain = 170.848
+Synthesis Optimization Complete : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 799.324 ; gain = 510.266
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 809.445 ; gain = 531.516
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:14 . Memory (MB): peak = 802.609 ; gain = 526.242
 INFO: [Common 17-1381] The checkpoint 'E:/Desktop/digital_design_project/digital_design_project.runs/synth_1/nekonull.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nekonull_utilization_synth.rpt -pb nekonull_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 809.445 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 18:31:10 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 802.609 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 25 21:43:38 2019...
