@@ -7,7 +7,7 @@ module clk_3_rotate(clk_1hz, out);
     reg [1:0] curr_num = 2'b00;
 
     always @(posedge clk_1hz) begin
-        if ((curr_num == 2)|(curr_num == 3)) begin
+        if ((curr_num >= 2) begin
             curr_num <= 0;
         end
         else begin
@@ -26,19 +26,21 @@ module clk_3_rotate(clk_1hz, out);
 endmodule
 
 module clk_1hz(
-    input clk,
-    output reg clk_out = 0,
-    output reg [28:0] cnt = 0 
+    sys_clk, clk_out
     );
+    input sys_clk;
+    output reg clk_out = 0;
+    reg [28:0] cnt = 0;
     parameter [28:0] period = 29'd4999_9999;
-    always@(posedge clk)
+    
+    always@(posedge sys_clk)
         if(cnt==period)begin
             clk_out = ~clk_out;
             cnt <= 0;
         end
         else
             cnt <= cnt+1;
- endmodule
+endmodule
 
 module clk_500hz(clk_10mhz, out);
     input [0:0] clk_10mhz;
