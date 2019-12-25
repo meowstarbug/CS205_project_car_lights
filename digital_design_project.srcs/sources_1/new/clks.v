@@ -7,7 +7,7 @@ module clk_3_rotate(clk_1hz, out);
     reg [1:0] curr_num = 2'b00;
 
     always @(posedge clk_1hz) begin
-        if ((curr_num >= 2) begin
+        if (curr_num == 2) begin
             curr_num <= 0;
         end
         else begin
@@ -49,7 +49,7 @@ module clk_500hz(clk_10mhz, out);
     reg [15:0] cnt=0;
     always @ (posedge clk_10mhz)
     begin
-        if(cnt >= 19999)
+        if(cnt == 19999)
         begin
             cnt <= 0;
             out <= ~out;
@@ -67,7 +67,7 @@ module clk_10mhz(sys_clk,out);
     reg [18:0] cnt=0;
     always @ (posedge sys_clk)
     begin
-        if(cnt >= 499999)
+        if(cnt == 499999)
         begin
             cnt <= 0;
             out <= ~out;

@@ -28,10 +28,10 @@ module p_light(b, p, blink_clk, out);
     always @(*)
     begin
         case ({b, p})
-            00: out <= 1'b0;
-            10: out <= blink_clk;
-            01: out <= 1'b1;
-            11: out <= 1'b1;
+            2'b00: out <= 1'b0;
+            2'b10: out <= blink_clk;
+            2'b01: out <= 1'b1;
+            2'b11: out <= 1'b1;
             default: out <= 1'b0;
         endcase
     end

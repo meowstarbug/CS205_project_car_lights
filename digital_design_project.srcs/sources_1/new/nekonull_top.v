@@ -17,11 +17,11 @@ module nekonull(
 
     wire [0:0] err;
     wire [0:0] buzz_clk; // 500 hz
-    wire [0:0] c3r;
+    wire [2:0] c3r;
     wire [0:0] blink_clk;
 
     wire [7:0] d_out, l_out, r_out, e_out, b_out, p_out;
-    reg [7:0] seg_off = 8'b1111_1111;
+    // reg [7:0] seg_off = 8'b1111_1111;
 
     error_detection error_detection1(.d(d), .l(l), .r(r), .e(e), .b(b), .p(p), .err(err));
 
@@ -37,7 +37,7 @@ module nekonull(
     buzzer_control buzzer_control1(.buzz_clk(buzz_clk), .l(l), .r(r), .e(e), .out(buzzer));
 
     seg_mux_6 seg_mux_61(.d(d), .l(l), .r(r), .e(e), .b(b), .p(p), .err(err), .d_out(d_out), .l_out(l_out), .r_out(r_out), .e_out(e_out), .b_out(b_out), .p_out(p_out));
-    seg_output seg_output1(.seg_en(seg_en), .seg_out(seg_out), .seg_clk(buzz_clk),.d0(seg_off), .d1(p_out), .d2(b_out), .d3(e_out), .d4(r_out), .d5(l_out), .d6(d_out), .d7(seg_off));
+    seg_output seg_output1(.seg_en(seg_en), .seg_out(seg_out), .seg_clk(buzz_clk),.d0(8'b1111_1111), .d1(p_out), .d2(b_out), .d3(e_out), .d4(r_out), .d5(l_out), .d6(d_out), .d7(8'b1111_1111));
 
 
 endmodule // nekonull

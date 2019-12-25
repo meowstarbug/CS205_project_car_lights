@@ -2,11 +2,17 @@
 
 /*
 I still need: 
-    to test: led logic, err logic, buzzer, top
+    to test: 
+        err logic
+        led logic
+        err control
+        buzzer
+        seg logic
+        seg generator
     testing: 
     tested:
 
-    clk refactoring, new clks
+    no need for refactoring, dynamic clks help testing
 */
 
 /*
